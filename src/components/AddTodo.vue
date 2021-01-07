@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div id="add_todo">
         <form @submit="addTodo">
             <input type="text" v-model="title" name="title" placeholder="Add Todo ...">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit_btn" class="btn">
         </form>
     </div>
 </template>
@@ -31,5 +31,22 @@ export default {
 
 <style scoped>
 
+    #add_todo {
+        margin: 20px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        border: 1px solid rgb(192, 94, 59);
+        border-radius: 5px;
+    }
+
+    #submit_btn {
+        padding: 10px;
+        background: coral;
+        border: 0;
+        border-radius: 10px;
+        margin: 10px;  
+    }
     
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="todo_item">
         <p v-bind:class="{'is-complete': todo.completed}">
             <input type="checkbox" v-on:change="markComplete(todo.completed)" >
             {{todo.title}}
@@ -29,5 +29,17 @@ export default {
 <style scoped>
     .is-complete {
         text-decoration: line-through;
+    }
+    #todo_item {
+        background: wheat;
+        padding: 10px;
+        margin: 0;
+    }
+    #todo_item button {
+        border-radius: 10px;
+        border: 1px solid rgb(66, 4, 4);
+        background: red;
+        color: white;
+        float: right;
     }
 </style>

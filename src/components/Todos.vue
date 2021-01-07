@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div v-for="todo in todos" v-bind:key="todo.id">
+    <div id="todos">
+        <div id="todo" v-for="todo in todos" v-bind:key="todo.id">
             <Todoitem v-bind:todo="todo" v-on:del-todo="$emit('del-todo', todo.id)"/>
         </div>
     </div>
@@ -20,5 +20,20 @@ export default {
 </script>
 
 <style scoped>
+    #todo {
+        text-align: left;
+        width: 50%;
+        margin: auto;
+        border-bottom: 1px solid rgb(66, 4, 4);
+        border-right: 1px solid rgb(66, 4, 4);
+        border-left: 1px solid rgb(66, 4, 4);        
+    }
 
+    #todo:nth-child(1) {
+         border: 1px solid rgb(66, 4, 4);
+    }
+
+
+
+   
 </style>
