@@ -30,7 +30,7 @@ export default {
     }
 
     #todo:nth-child(1) {
-         border: 1px solid rgb(66, 4, 4);
+        border: 1px solid rgb(66, 4, 4);
     }
 
 
